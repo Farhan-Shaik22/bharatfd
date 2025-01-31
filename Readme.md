@@ -20,7 +20,7 @@ This is a Django-based FAQ management system with support for multi-language tra
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/Farhan-Shaik22/bharatfd.git
-cd faq-management-system
+cd bharatfd
 ```
 
 2. Build and Run the Docker Containers
