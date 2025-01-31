@@ -22,3 +22,17 @@ class FAQViewSet(viewsets.ModelViewSet):
         context = super().get_serializer_context()
         context['request'] = self.request
         return context
+
+    def perform_create(self, serializer):
+        instance = serializer.save()
+        self.clear_cache()
+
+    def perform_update(self, serializer):
+        instance = serializer.save()
+        self.clear_cache()
+
+    def clear_cache(self):
+        languages = ['en', 'hi', 'bn']  # Add all supported languages here
+        for lang in languages:
+            cache_key = f'faqs_{lang}'
+            cache.delete(cache_key)
