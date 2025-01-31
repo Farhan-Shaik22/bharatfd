@@ -126,7 +126,6 @@ curl http://localhost:8000/api/faqs/1/
 ```
 Example Response
 ```json
-Copy
 {
     "id": 1,
     "question": "What is Django?",
