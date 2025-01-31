@@ -18,7 +18,6 @@ class FAQViewSet(viewsets.ModelViewSet):
         return queryset
 
     def get_serializer_context(self):
-        # Pass the request context to the serializer
         context = super().get_serializer_context()
         context['request'] = self.request
         return context
@@ -31,8 +30,12 @@ class FAQViewSet(viewsets.ModelViewSet):
         instance = serializer.save()
         self.clear_cache()
 
+    def perform_destroy(self, instance):
+        instance.delete()
+        self.clear_cache()
+
     def clear_cache(self):
-        languages = ['en', 'hi', 'bn']  # Add all supported languages here
+        languages = ['en', 'hi', 'bn', 'es', 'te', 'sa']  
         for lang in languages:
             cache_key = f'faqs_{lang}'
             cache.delete(cache_key)
