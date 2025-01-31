@@ -1,0 +1,31 @@
+# Core Django
+Django==4.2.7
+djangorestframework==3.14.0
+
+# Database
+psycopg2-binary==2.9.9  # PostgreSQL adapter
+dj-database-url==2.0.0  # For parsing DATABASE_URL
+
+# Caching
+redis==5.0.1            # Redis client
+django-redis==5.2.0     # Django Redis cache backend
+
+# WYSIWYG Editor
+django-ckeditor==6.7.0  # Rich text editor for Django
+
+# Translations
+googletrans==4.0.0-rc1  # Google Translate API wrapper
+
+# Static Files
+whitenoise==6.6.0       # For serving static files in production
+
+# Deployment
+gunicorn==21.2.0        # WSGI server for production
+python-decouple==3.8    # For managing environment variables
+
+# Testing
+pytest==7.4.2           # Testing framework
+pytest-django==4.7.0    # Django plugin for pytest
+
+# Development
+ipython==8.17.2         # Enhanced Python shell
