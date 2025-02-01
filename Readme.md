@@ -1,7 +1,7 @@
 # Deployed Link
-##[Click Here](https://bharatfd-faq-production.up.railway.app/admin)
+## [Click Here](https://bharatfd-faq-production.up.railway.app/admin)
 
-##Credentials:
+## Credentials:
 
 -Username : farhan22
 -Password: hello123
