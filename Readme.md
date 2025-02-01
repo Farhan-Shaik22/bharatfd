@@ -1,8 +1,10 @@
 # Deployed Link
-Click Here[https://bharatfd-faq-production.up.railway.app/admin]
-Credentials:
-Username : farhan22
-Password: hello123
+##[Click Here](https://bharatfd-faq-production.up.railway.app/admin)
+
+##Credentials:
+
+-Username : farhan22
+-Password: hello123
 # FAQ Management System
 This is a Django-based FAQ management system with support for multi-language translations, caching, and a REST API.
 
